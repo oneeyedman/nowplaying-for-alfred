@@ -7,7 +7,7 @@ tell application "Spotify"
   set artistName to artist of current track
   set realurl to ("http://open.spotify.com/track/" & track_id)
 
-  set musicStr to " ? " & songName & " - " & artistName & " " & realurl & " #Spotify #NowPlaying"
-  
+  set musicStr to "? " & songName & " - " & artistName & " ? " & realurl & "\n\n#Spotify #NowPlaying "
+
   set the clipboard to musicStr
 end tell
